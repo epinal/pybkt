@@ -6,8 +6,9 @@ This implementation is based on:
 * [`Jetsetter/pybktree`](https://github.com/Jetsetter/pybktree): very nice implementation not recursive.
 
 Both lookup methods from above implementations are included: 
-``query()``: recursive
-``find()``: not recursive
+
+* ``query()``: recursive
+* ``find()``: not recursive
 
 Example usage:
 
