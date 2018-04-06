@@ -13,8 +13,7 @@ Example usage:
 
 Create the tree using linux english words dictionary and levenshtein distance function.
 
-```python
-    
+```python    
     >>> tree = BKTree(levenshtein, dict_words())    
     >>> tree.query('book', 1)  # Query the tree to find words at most 1 distance from 'book'
     [(0, 'book'), (1, 'Cook'), (1, 'boo'), (1, 'boob'), (1, 'books'), (1, 'boom'), (1, 'boon'), (1, 'boor'), (1, 'boos'), (1, 'boot'), (1, 'brook'), (1, 'cook'), (1, 'gook'), (1, 'hook'), (1, 'kook'), (1, 'look'), (1, 'nook'), (1, 'rook'), (1, 'took')]
@@ -26,8 +25,7 @@ Create the tree using linux english words dictionary and levenshtein distance fu
 
 Creating the BkTree data structure using big amounts of data take some time so you can save it into a file and load it after.
 
-```python
-    
+```python    
     >>> tree = BKTree(levenshtein, dict_words())    
     >>> tree.safe_to_file('tree.json')  # Safe the tree structure in a file, default 'tree.json' 
     
@@ -40,8 +38,7 @@ Creating the BkTree data structure using big amounts of data take some time so y
 
 Measure BKTree time vs brute force
 
-```python
-    
+```python    
     # Load the saved structure
     >>> tree = BKTree(levenshtein)
     >>> tree.load('tree.json')    
