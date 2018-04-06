@@ -12,6 +12,7 @@ Both lookup methods from above implementations are included:
 Example usage:
 
 Create the tree using linux english words dictionary and levenshtein distance function.
+
 .. code:: python
     
     >>> tree = BKTree(levenshtein, dict_words())    
@@ -22,6 +23,7 @@ Create the tree using linux english words dictionary and levenshtein distance fu
     [(0, 'book'), (1, 'Cook'), (1, 'boo'), (1, 'boob'), (1, 'books'), (1, 'boom'), (1, 'boon'), (1, 'boor'), (1, 'boos'), (1, 'boot'), (1, 'brook'), (1, 'cook'), (1, 'gook'), (1, 'hook'), (1, 'kook'), (1, 'look'), (1, 'nook'), (1, 'rook'), (1, 'took')]
 
 Creating the BkTree data structure using big amounts of data take some time so you can save it into a file and load it after.
+
 .. code:: python
     
     >>> tree = BKTree(levenshtein, dict_words())    
@@ -33,6 +35,7 @@ Creating the BkTree data structure using big amounts of data take some time so y
     [(0, 'book'), (1, 'Cook'), (1, 'boo'), (1, 'boob'), (1, 'books'), (1, 'boom'), (1, 'boon'), (1, 'boor'), (1, 'boos'), (1, 'boot'), (1, 'brook'), (1, 'cook'), (1, 'gook'), (1, 'hook'), (1, 'kook'), (1, 'look'), (1, 'nook'), (1, 'rook'), (1, 'took')]
 
 Messure time vs brute force
+
 .. code:: python
     
     >>> # Load the saved structure
