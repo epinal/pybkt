@@ -18,7 +18,7 @@ Create the tree using Linux English words dictionary and ``levenshtein`` distanc
     >>> tree.query('book', 1)  # Query the tree to find words at most 1 distance from 'book'
     [(0, 'book'), (1, 'Cook'), (1, 'boo'), (1, 'boob'), (1, 'books'), (1, 'boom'), (1, 'boon'), (1, 'boor'), (1, 'boos'), (1, 'boot'), (1, 'brook'), (1, 'cook'), (1, 'gook'), (1, 'hook'), (1, 'kook'), (1, 'look'), (1, 'nook'), (1, 'rook'), (1, 'took')]
     
-    # calling ``find()`` which is not recursive will give the same results
+    # calling ``find()`` which is not recursive gives the same results
     >>> tree.find('book', 1)
     [(0, 'book'), (1, 'Cook'), (1, 'boo'), (1, 'boob'), (1, 'books'), (1, 'boom'), (1, 'boon'), (1, 'boor'), (1, 'boos'), (1, 'boot'), (1, 'brook'), (1, 'cook'), (1, 'gook'), (1, 'hook'), (1, 'kook'), (1, 'look'), (1, 'nook'), (1, 'rook'), (1, 'took')]
 ```
