@@ -11,7 +11,7 @@ Both lookup methods from above implementations are included:
 
 Example usage:
 
-Create the tree using linux english words dictionary and levenshtein distance function.
+Create the tree using Linux English words dictionary and ``levenshtein`` distance function.
 
 ```python    
     >>> tree = BKTree(levenshtein, dict_words())    
